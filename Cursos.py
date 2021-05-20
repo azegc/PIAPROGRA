@@ -19,3 +19,11 @@ class Cursos:
         imprimir = archivo.read()
         print(imprimir)
         archivo.close
+    def consultar_por_id(self,id):
+        self.id = id
+        archivo = open("cursos.txt")
+        for linea in archivo:
+            datos = linea.strip().split('|')
+            id_curso = datos[0]
+            descripcion = datos[1]
+            id_empleado = datos[2]
