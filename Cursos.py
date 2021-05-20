@@ -15,3 +15,7 @@ class Cursos:
         archivo.write(id_empleado)
         archivo.write('\n')
         archivo.close()
+        archivo = open("cursos.txt", 'r')
+        imprimir = archivo.read()
+        print(imprimir)
+        archivo.close
