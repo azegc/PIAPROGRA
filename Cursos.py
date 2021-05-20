@@ -27,3 +27,6 @@ class Cursos:
             id_curso = datos[0]
             descripcion = datos[1]
             id_empleado = datos[2]
+            if id_curso == id:
+                print(id_curso,descripcion,id_empleado)
+        archivo.close()
